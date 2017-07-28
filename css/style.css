@@ -1,0 +1,328 @@
+/*----------------------------------------------*\
+  # 1. Structure
+\*----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.spacer-20 {
+    height: 20px;
+    width: 100%;
+    clear: both;
+}
+
+.spacer-40 {
+    height: 40px;
+    width: 100%;
+    clear: both;
+}
+
+.spacer-60 {
+    height: 60px;
+    width: 100%;
+    clear: both;
+}
+
+.spacer-120 {
+    height: 120px;
+    width: 100%;
+    clear: both;
+}
+
+.cleafix::after {
+    content: ' ';
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.horizon__line-1a-dark {
+  position: relative;
+  height: 35.16vmin;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyMCAyNjAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0tMTUgMjYyTDE5MzUtMmwtMTkzLTQwTC0xMC01OGMtLjMzMyAxMDYtNC42NjcgMjE0LTUgMzIweiIgZmlsbD0iIzExMSIvPjwvc3ZnPg==") no-repeat 0 0;
+  background-size: 100% 100%;
+}
+
+/*----------------------------------------------*\
+  # 2. Nav
+\*----------------------------------------------*/
+.nav {
+    position: relative;
+    background: #111;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.nav__layout {
+    display: inline-block;
+    width: 100%;
+}
+
+.nav__header-1 {
+    margin: 5vmin 0 5vmin 27vmin;
+    float: left;
+    font-size: 2.5vmin;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav__github {
+    margin: 5.5vmin 3vmin 0 0;
+    padding-bottom: 1.5vmin;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vmin;
+    float: right;
+}
+
+.nav__contact {
+    margin: 5.5vmin 35vmin 0 0;
+    padding-bottom: 1.5vmin;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vmin;
+    float: right;
+}
+
+.nav__github:hover,
+.nav__contact:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
+/*----------------------------------------------*\
+  # 3. Header
+\*----------------------------------------------*/
+.header {
+    position: relative;
+    background: #111;
+    width: 100%;
+    height: 50%;
+}
+
+.header__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -34%);
+    text-align: center;
+}
+
+.header__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.5vmin;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 2vmin 0;
+}
+
+.header__text {
+    font-family: 'Rubik', sans-serif;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: 500;
+    font-size: 2vmin;
+    width: 71.65vmin;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.header__btn, .header__btn:focus {
+    font-family: 'Rubik', sans-serif;
+    display: inline-block;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-size: 2vmin;
+    padding: 1.3vmin 3vmin;
+    margin-top: 3.3vmin;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    color: #FFFFFF;
+    background: transparent;
+    border: .45vmin solid #fff;
+    border-radius: 10vmin;
+    transition: 200ms;
+}
+
+.header__btn:hover {
+    background: #fff;
+    color: #111;
+}
+
+/*----------------------------------------------*\
+  # 4. Section 1
+\*----------------------------------------------*/
+.section-1 {
+    text-align: center;
+    height: auto;
+    padding: 5% 0;
+}
+
+.section-1__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5vmin;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-1__text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8vmin;
+    line-height: 1.42857143;
+    color: #333;
+    margin-top: 1vmin;
+}
+
+.section-1__text i {
+    margin-left: 3px;
+    color: #ff8080;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.section-1 > .portfolio {
+    margin: 5vmin 5vmin 0 5vmin;
+}
+
+.selectors {
+    margin-bottom: 8vmin;
+}
+
+.selector {
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    font-size: 1.7vmin;
+    color: rgba(17, 17, 17, 0.5);
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1.3vmin 0 1.3vmin;
+    padding: .4vmin 1.3vmin;
+    border: .28vmin solid rgba(17, 17, 17, 0.1);
+    border-radius: 10px;
+    transition: 400ms;
+}
+.selector.active {
+    color: rgba(17, 17, 17, 1);
+    border: .28vmin solid rgba(17, 17, 17, 1);
+}
+
+.selector:hover {
+    color: rgba(17, 17, 17, 1);
+    border: .28vmin solid rgba(17, 17, 17, 1);
+}
+
+.grid-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.grid {
+    margin: 0 auto;
+}
+
+.grid-item {
+    display: inline-block;
+    width: 48vmin;
+    height: auto;
+    margin: 0 20px 50px 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 1px 3px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    color: #111;
+    text-decoration: none;
+    transform: translateY(0);
+    background: #fff;
+    -webkit-transition: box-shadow .6s cubic-bezier(0.4, 0, 0.2, 1);
+           transition: box-shadow .6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grid-item:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,.2);
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    box-shadow: 1px 1px 10px rgba(0,0,0,.05);
+}
+
+.grid-item > .content {
+    padding: 15px 20px;
+    background: rgba(0,0,0,.02);
+}
+
+.grid-item > .content > h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2.5vmin;
+    margin: 2vmin 0 1vmin 0;
+}
+
+.grid-item > .content > p {
+    font-family: 'Rubik', sans-serif;
+    color: rgba(0,0,0, .5);
+    font-size: 1.8vmin;
+    line-height: 1.3;
+    margin-bottom: 1vmin;
+}
+
+.grid-item > .content > p.price {
+    display: inline-block;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,.2);
+    padding: .8vmin;
+    margin-top: .5vmin;
+}
+
+/*----------------------------------------------*\
+  # 5. Footer
+\*----------------------------------------------*/
+.footer {
+    position: relative;
+    background: #111;
+    text-align: center;
+    padding: 4vmin 0 3vmin;
+}
+
+.footer__text {
+    font-family: 'Rubik', sans-serif;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 1.5vmin;
+}

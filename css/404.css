@@ -1,0 +1,48 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow-y: hidden;
+}
+
+.content__heading-1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  animation: ghost 3s infinite;
+}
+
+.content__heading-2 {
+  text-align: center;
+  color: #fff;
+  animation: ghost 3s infinite;
+}
+
+.table {
+  display: table;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.table__center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@keyframes ghost {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+}
